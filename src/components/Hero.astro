@@ -46,6 +46,10 @@ const coordsLabel = siteConfig.coords.label[lang];
         <span>{coordsLabel}</span>
       </div>
 
+      <p class="mt-4">
+        <span id="live-status" class="inline-flex items-center gap-1.5 rounded-full bg-black/35 px-3 py-1 text-ivory/90 text-xs">{hero.checking}</span>
+      </p>
+
       <a href={mapsUrl} target="_blank" rel="noopener" class="mt-5 inline-flex items-center gap-2 text-goldBright hover:text-gold underline-offset-4 hover:underline text-sm">
         {hero.viewLocation}
       </a>
@@ -153,3 +157,25 @@ const coordsLabel = siteConfig.coords.label[lang];
       });
   })();
 </script>
+
+<script is:inline define:vars={{ hero }}>
+  (function () {
+    // Live open/closed status for Chiang Rai Night Bazaar (18:00–23:00, Asia/Bangkok)
+    const el = document.getElementById('live-status');
+    if (!el) return;
+    function fmt(t) { return String(t).padStart(2, '0') + ':00'; }
+    try {
+      const now = new Date(new Date().toLocaleString('en-US', { timeZone: 'Asia/Bangkok' }));
+      const h = now.getHours();
+      const open = 18, close = 23;
+      if (h >= open && h < close) {
+        el.textContent = hero.openNow;
+      } else {
+        el.textContent = hero.closedNow;
+      }
+    } catch (e) {
+      el.textContent = hero.checking;
+    }
+  })();
+</script>
+
