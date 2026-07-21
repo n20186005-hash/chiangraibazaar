@@ -1,0 +1,263 @@
+{
+  "meta": {
+    "title": "Chiang Rai Night Bazaar Guide | Night Market on Phahon Yothin Road",
+    "description": "Your complete guide to the Chiang Rai Night Bazaar: opening hours, how to get there, what to buy, bargaining tips, Northern Thai food, and a live map. Rated 4.2 from 15,199 Google reviews."
+  },
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "history": "History",
+    "guide": "Visit guide",
+    "food": "Food",
+    "gallery": "Photos",
+    "reviews": "Reviews",
+    "faq": "FAQ",
+    "map": "Map"
+  },
+  "hero": {
+    "titleMain": "Chiang Rai Night Bazaar",
+    "titleAccent": "Night Bazaar",
+    "eyebrow": "Night Market · Chiang Rai",
+    "subtitle": "Chiang Rai's largest and most famous night market, along Phahon Yothin Road near the Golden Clock Tower and the Old City gate — handicrafts, souvenirs, Northern Thai food and nightly culture.",
+    "cta1": "Plan your visit",
+    "cta2": "See the food",
+    "rating": "4.2",
+    "reviewCount": "15,199 Google reviews",
+    "viewLocation": "View location on Google Maps",
+    "loading": "Loading live weather…",
+    "liveWeather": "Current weather",
+    "plannerTitle": "Plan your evening",
+    "plannerNote": "Stalls open from about 6 PM. Arriving near dusk lets you watch the bazaar light up and beats the late-night crowds.",
+    "goldenHourLabel": "Opening hours",
+    "crowdWarningLabel": "Peak time",
+    "crowdAfter": "20:00 – 22:00",
+    "lightCaption": "Open nightly 18:00 – 23:00",
+    "weatherError": "Live weather is unavailable right now"
+  },
+  "about": {
+    "label": "Get to know",
+    "heading": "What is the Chiang Rai Night Bazaar?",
+    "lead": "The Chiang Rai Night Bazaar is the city's best-known evening market, on Phahon Yothin Road close to the Golden Clock Tower and the Old City gate.",
+    "paragraph1": "After dark the street fills with stalls selling handicrafts, textiles, jewellery, souvenirs and hill-tribe goods from the Akha, Karen, Lisu, Lahu and Hmong communities. There are also restaurants, Thai massage and street performances.",
+    "paragraph2": "It is also a great starting point for nearby sights such as Wat Phra Kaew, the King Mengrai Monument and the Mae Kok River, making the market both a shopping spot and the heart of Chiang Rai's night culture.",
+    "quote": "Come after dark — that's when the whole street lights up with stalls, food smoke and music.",
+    "quoteAuthor": "A regular night-market visitor",
+    "stats": [
+      { "value": "4.2", "label": "Google rating" },
+      { "value": "15,199", "label": "reviews" },
+      { "value": "18:00–23:00", "label": "nightly" }
+    ],
+    "highlights": [
+      { "tag": "🛍️", "title": "Crafts & souvenirs", "desc": "Silk, silver, woodcarving and hill-tribe keepsakes" },
+      { "tag": "🍜", "title": "Northern food & street eats", "desc": "Khao soi, sai ua sausage, or vegetarian options" },
+      { "tag": "💆", "title": "Thai massage & foot spa", "desc": "Ease tired legs with an affordable massage" }
+    ],
+    "editorTip": {
+      "tag": "Editor's tip",
+      "text": "Arrive around 18:00–19:00 when it's cooler and the stalls are just lighting up, then settle in for dinner at the food court.",
+      "ctaLabel": "How to get there"
+    }
+  },
+  "history": {
+    "label": "History & lore",
+    "heading": "The story of Chiang Rai's night market",
+    "intro": "The market grew alongside Chiang Rai's rise as a tourist base in the 1990s, when travellers began using the city as a stopover for the Golden Triangle — yet the area's historical and Lanna cultural roots run far deeper.",
+    "blocks": [
+      { "title": "Lanna heritage", "text": "Chiang Rai was once the capital of the Lanna Kingdom and a long-standing caravan crossroads, so handicrafts, textiles, silver and hill-tribe goods have accumulated here for generations — the very soul of this night market." },
+      { "title": "The Golden Clock Tower", "text": "At the market's heart stands the Golden Clock Tower, designed by Thawan Duchanee, a National Artist from Chiang Rai. Its golden crown glows as the city's favourite meeting point and a symbol of modern Chiang Rai." },
+      { "title": "A night-time cultural hub", "text": "Today the market blends commerce, food and performance, expressing a modern Chiang Rai identity that still keeps its Lanna cultural roots." },
+      { "title": "Nearby historical landmarks", "text": "A short walk away is Wat Phra Kaew, the original home of the Emerald Buddha — Thailand's most revered image — alongside the King Mengrai Monument and the Mae Kok River, all anchoring the area's deep history." }
+    ],
+    "legend": {
+      "title": "Local legend",
+      "text": "The striking Golden Clock Tower at the heart of the market was designed by Thawan Duchanee, a National Artist from Chiang Rai. Locals say its golden crown honours the glory of old Lanna, and it has become the meeting point everyone trusts."
+    },
+    "didYouKnow": {
+      "title": "Did you know?",
+      "text": "On weekends the Walking Street expands the market area even further, making it especially lively."
+    },
+    "sources": {
+      "label": "Sources & declaration",
+      "text": "This page is produced by volunteers as a non-profit educational guide. Historical and coordinate data are referenced from the sources listed in the 'Reference sources' section below and may be updated for accuracy."
+    }
+  },
+  "guide": {
+    "label": "Visitor guide",
+    "heading": "How to visit the Chiang Rai Night Bazaar",
+    "lead": "Entry is free and wandering is easy. Here's what helps you get the most out of your visit.",
+    "scamTip": {
+      "tag": "⚠️ Heads up",
+      "text": "Cheap 'designer' goods are usually fakes — bargain to about half the asking price. For food, check the price on the sign before ordering."
+    },
+    "hours": {
+      "tag": "🕒",
+      "title": "Opening hours",
+      "time": "18:00 – 23:00 (nightly)",
+      "items": [
+        { "label": "Stalls open", "value": "18:00" },
+        { "label": "Busiest", "value": "20:00 – 22:00" },
+        { "label": "Closes", "value": "23:00" }
+      ]
+    },
+    "fees": {
+      "tag": "🎟️",
+      "title": "Costs",
+      "items": [
+        { "title": "Entry", "desc": "Free — no ticket needed" },
+        { "title": "Souvenirs", "desc": "From a few baht; bargaining expected" },
+        { "title": "Food", "desc": "Around 50–150 THB per dish" }
+      ]
+    },
+    "transport": {
+      "tag": "🚐",
+      "title": "Getting there",
+      "items": [
+        { "title": "In town", "desc": "Walk from the Old City gate or Clock Tower in 10–15 minutes" },
+        { "title": "Tuk-tuk / songthaew", "desc": "Red songthaews loop the city for 20–40 THB" },
+        { "title": "Grab", "desc": "Easy to book via the app with clear pricing" }
+      ]
+    },
+    "faqTitle": "Frequently asked questions",
+    "faqLead": "Answers to the questions visitors ask most often.",
+    "faqs": [
+      { "q": "Which days is it open?", "a": "Every day, including public holidays." },
+      { "q": "What's the best time to visit?", "a": "Arrive around 18:00–19:00 when it's cooler and the stalls are lighting up; 20:00–22:00 is the liveliest." },
+      { "q": "How should I handle money?", "a": "Carry small cash and a power bank; some stalls are cash-only." },
+      { "q": "How do I get there?", "a": "Walk from the Old City gate or Clock Tower in 10–15 minutes; red songthaews and Grab are handy too." },
+      { "q": "Is there an entry fee?", "a": "No — entry is free, perfect for a relaxed stroll." },
+      { "q": "Is it family-friendly?", "a": "Very — there's varied food and it's safe to stroll with kids." }
+    ]
+  },
+  "food": {
+    "label": "Must-try eats",
+    "heading": "Food at the Chiang Rai Night Bazaar",
+    "lead": "The market mixes restaurants, a food court and roadside stalls, covering Northern Thai and street food in one place.",
+    "dishes": [
+      { "tag": "🍜", "name": "Khao soi", "price": "50–80 THB", "desc": "Curry-noodle soup, a Northern Thailand classic" },
+      { "tag": "🌭", "name": "Sai ua", "price": "60–100 THB", "desc": "Northern herb sausage with chili dip" },
+      { "tag": "🍢", "name": "Satay / grill", "price": "10–20 THB/skewer", "desc": "Tender skewers with peanut sauce" },
+      { "tag": "🥭", "name": "Mango sticky rice", "price": "50–70 THB", "desc": "A crowd-favourite sweet of ripe mango and warm sticky rice" }
+    ],
+    "quote": {
+      "text": "Shop till you're hungry, then grab a roadside plate — the smell of khao soi is the signal you've arrived in Chiang Rai.",
+      "author": "A local food blogger"
+    }
+  },
+  "gallery": {
+    "label": "In pictures",
+    "heading": "The Chiang Rai Night Bazaar in photos",
+    "intro": "A look at the bazaar after dark — the stalls, the food and the street lights.",
+    "historicalNote": "All images show the real atmosphere of the Chiang Rai night market.",
+    "credits": "Images are for illustration only and are not owned by this site.",
+    "alts": [
+      "Evening market atmosphere",
+      "Row of handicraft stalls",
+      "Roadside food stall",
+      "Stall lights and signage",
+      "Northern food corner",
+      "Textile and jewellery stall",
+      "Visitors browsing",
+      "Foot-massage corner",
+      "Bustling food court",
+      "Phahon Yothin Road at night"
+    ],
+    "viewLocation": "View location on Google Maps"
+  },
+  "reviews": {
+    "label": "From visitors",
+    "heading": "Chiang Rai Night Bazaar reviews",
+    "intro": "A summary of what real visitors say on Google Reviews.",
+    "disclaimer": "Overall 4.2 from 15,199 reviews (Google)",
+    "declaration": "Reviews shown are summarised for illustration, not verbatim posts.",
+    "featured": [
+      { "text": "Such a fun market to walk around — souvenirs and food, perfect after dinner.", "source": "— International visitor" },
+      { "text": "The khao soi here is delicious and cheap, and the vendors are friendly.", "source": "— Domestic visitor" }
+    ],
+    "items": [
+      { "text": "Lovely atmosphere, could walk for hours, so many souvenirs.", "rating": "5", "name": "A. Suwan", "date": "2026-05" },
+      { "text": "Great variety of food; the sai ua and khao soi were my favourites.", "rating": "5", "name": "K. Phrom", "date": "2026-04" },
+      { "text": "Bargain hard — some stalls quote high at first.", "rating": "4", "name": "M. Lee", "date": "2026-03" },
+      { "text": "Quite crowded on Sat–Sun but still enjoyable.", "rating": "4", "name": "T. Anan", "date": "2026-03" },
+      { "text": "Easy to reach, right by the Golden Clock Tower.", "rating": "5", "name": "P. Mod", "date": "2026-02" },
+      { "text": "Beautiful keepsakes, especially the woodcarvings.", "rating": "4", "name": "S. In", "date": "2026-02" },
+      { "text": "Arriving at 18:00 was just right, not too hot.", "rating": "5", "name": "V. K", "date": "2026-01" },
+      { "text": "Affordable food, tried many things.", "rating": "4", "name": "N. Cha", "date": "2026-01" }
+    ],
+    "viewLocation": "View location on Google Maps"
+  },
+  "mapSection": {
+    "label": "Map & directions",
+    "heading": "How to get to the Chiang Rai Night Bazaar",
+    "lead": "The market sits in central Chiang Rai and is easy to reach by public transport or on foot.",
+    "stats": [
+      { "tag": "Area", "value": "City centre", "sub": "Phahon Yothin Rd" },
+      { "tag": "Open", "value": "18:00–23:00", "sub": "nightly" },
+      { "tag": "Entry", "value": "Free", "sub": "no ticket" }
+    ],
+    "address": "WR4M+5M2, Tambon Wiang, Mueang Chiang Rai District, Chiang Rai 57000",
+    "plusCode": "WR4M+5M2 · Chiang Rai",
+    "coords": "19.91°N, 99.83°E"
+  },
+  "footer": {
+    "brand": {
+      "name": "Chiang Rai Night Bazaar",
+      "tagline": "Guide to Chiang Rai's night market"
+    },
+    "about": "An independent visitor guide to the Chiang Rai Night Bazaar, made to share practical travel information neutrally.",
+    "navTitle": "Menu",
+    "navItems": [
+      { "href": "#about", "label": "About" },
+      { "href": "#history", "label": "History" },
+      { "href": "#guide", "label": "Visit guide" },
+      { "href": "#food", "label": "Food" },
+      { "href": "#gallery", "label": "Photos" },
+      { "href": "#reviews", "label": "Reviews" },
+      { "href": "#faq", "label": "FAQ" },
+      { "href": "#map", "label": "Map" }
+    ],
+    "noteTitle": "Good to know",
+    "note": "Check the latest times and prices before you go, as they can change.",
+    "mapsLabel": "Google Maps →",
+    "sourcesTitle": "Reference sources",
+    "sourcesNote": "Information is compiled from the following sources to support content credibility.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "cookies": "Cookie Settings",
+    "disclaimerLead": "This site is run by volunteers with no commercial interest.",
+    "unofficial": "Not an official site of the night market or the Chiang Rai municipality.",
+    "dataSource": "Coordinates and ratings are referenced from Google Maps.",
+    "copyright": "© 2026 Chiang Rai Night Bazaar Guide. All rights reserved."
+  },
+  "legal": {
+    "privacy": {
+      "title": "Privacy Policy",
+      "updated": "Last updated: 2026-07-21",
+      "sections": [
+        { "h": "Information we collect", "p": "This site has no membership registration and does not collect personal data directly." },
+        { "h": "Cookies", "p": "We may only use cookies to remember your chosen language.", "list": ["Essential cookies for language display", "No sharing of data with third parties"] },
+        { "h": "Contact", "p": "For any data questions, reach us via the reference sources page." }
+      ]
+    },
+    "terms": {
+      "title": "Terms of Service",
+      "updated": "Last updated: 2026-07-21",
+      "sections": [
+        { "h": "Usage", "p": "Content is for guidance only; please verify with official sources before travelling." },
+        { "h": "Limitation of liability", "p": "We are not liable for any loss arising from use of the information on this site." },
+        { "h": "Copyright", "p": "Illustrative images are not owned by this site." }
+      ]
+    },
+    "cookies": {
+      "title": "Cookie Settings",
+      "updated": "Last updated: 2026-07-21",
+      "intro": "We use cookies only to remember your language. You can disable them if you prefer.",
+      "categories": [
+        { "h": "Essential cookies", "p": "Required to display your chosen language.", "status": "Enabled", "active": true, "sub": "Cannot be disabled", "subStatus": "Required" },
+        { "h": "Analytics cookies", "p": "Help us understand usage to improve content.", "status": "Off", "active": false, "sub": "Not shared", "subStatus": "Optional" }
+      ],
+      "consent": "Settings apply after you press save.",
+      "save": "Save",
+      "rejectAll": "Reject all"
+    }
+  }
+}

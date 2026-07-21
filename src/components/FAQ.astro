@@ -1,0 +1,28 @@
+---
+interface Props {
+  messages: Record<string, any>;
+}
+const { messages } = Astro.props;
+const guide = messages.guide;
+const faqs = guide.faqs;
+---
+
+<section id="faq" class="py-20 bg-ivory text-ink scroll-mt-20">
+  <div class="max-w-3xl mx-auto px-5">
+    <p class="font-hand text-gold text-xl md:text-2xl">{guide.label}</p>
+    <h2 class="font-display font-semibold text-3xl md:text-5xl text-teak mt-2">{guide.faqTitle}</h2>
+    {guide.faqLead && <p class="mt-4 max-w-2xl text-ink/80">{guide.faqLead}</p>}
+
+    <div class="mt-10 space-y-3">
+      {faqs.map((f) => (
+        <details class="group rounded-xl border border-gold/25 bg-white/50 p-4 open:bg-teak/5">
+          <summary class="cursor-pointer font-medium text-teak flex justify-between items-center">
+            {f.q}
+            <span class="text-gold transition-transform group-open:rotate-45">+</span>
+          </summary>
+          <p class="mt-2 text-sm text-ink/75">{f.a}</p>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>
