@@ -14,7 +14,7 @@ const canonical = `${siteConfig.domain}/${lang}/`;
 const jsonLd = [
   {
     '@context': 'https://schema.org',
-    '@type': 'TouristAttraction',
+    '@type': ['TouristAttraction', 'NightMarket'],
     name: siteConfig.name[lang],
     description,
     image: `${siteConfig.domain}/gallery/chiang-rai-night-bazaar-1.jpg`,
@@ -43,6 +43,9 @@ const jsonLd = [
       },
     ],
     sameAs: siteConfig.sameAs,
+    publicAccess: true,
+    touristType: 'Leisure, Shopping, Food',
+    openingHours: 'Mo-Su 18:00-23:00',
   },
   {
     '@context': 'https://schema.org',
