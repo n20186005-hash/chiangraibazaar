@@ -5,7 +5,7 @@ export const siteConfig = {
     zh: '清莱夜市'
   },
   slug: 'chiang-rai-night-bazaar',
-  domain: 'https://chiangraibazaar.com',
+  domain: process.env.CURRENT_SITE_DOMAIN ? `https://${process.env.CURRENT_SITE_DOMAIN}` : 'https://chiangraibazaar.com',
   mapsUrl: 'https://maps.app.goo.gl/D5xsGmoe68TraUBd6',
   coords: {
     lat: 19.9070,
