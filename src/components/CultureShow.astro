@@ -1,0 +1,30 @@
+---
+interface Props {
+  messages: Record<string, any>;
+}
+const { messages } = Astro.props;
+const cs = messages.cultureShow;
+---
+
+<section id="culture" class="py-20 bg-teak text-ivory">
+  <div class="max-w-7xl mx-auto px-5">
+    <p class="font-hand text-gold text-xl md:text-2xl">{cs.label}</p>
+    <h2 class="font-display font-semibold text-3xl md:text-5xl text-ivory mt-2">{cs.heading}</h2>
+    <p class="mt-4 max-w-3xl text-ivory/80 text-lg">{cs.lead}</p>
+
+    <div class="grid md:grid-cols-2 gap-6 mt-10">
+      {cs.stages.map((s) => (
+        <div class="rounded-2xl border border-gold/30 bg-teakDeep/60 p-6">
+          <span class="font-hand text-goldBright text-2xl">🎭</span>
+          <h3 class="font-display text-xl text-goldBright mt-2">{s.title}</h3>
+          <p class="mt-2 text-ivory/80">{s.desc}</p>
+        </div>
+      ))}
+    </div>
+
+    <div class="mt-8 rounded-full bg-gold/15 border border-gold/40 px-5 py-3 inline-flex items-center gap-2 text-ivory">
+      <span class="text-goldBright">⏰</span>
+      <span class="text-sm">{cs.tip}</span>
+    </div>
+  </div>
+</section>
