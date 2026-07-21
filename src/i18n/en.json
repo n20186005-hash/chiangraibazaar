@@ -21,6 +21,9 @@
     "subtitle": "Chiang Rai's largest and most famous night market, along Phahon Yothin Road near the Golden Clock Tower and the Old City gate — handicrafts, souvenirs, Northern Thai food and nightly culture.",
     "cta1": "Plan your visit",
     "cta2": "See the food",
+    "openNow": "🟢 Opens tonight at 18:00",
+    "closedNow": "🔴 Closed right now",
+    "checking": "Checking opening status…",
     "rating": "4.2",
     "reviewCount": "15,199 Google reviews",
     "viewLocation": "View location on Google Maps",
@@ -64,17 +67,17 @@
     "intro": "The market grew alongside Chiang Rai's rise as a tourist base in the 1990s, when travellers began using the city as a stopover for the Golden Triangle — yet the area's historical and Lanna cultural roots run far deeper.",
     "blocks": [
       { "title": "Lanna heritage", "text": "Chiang Rai was once the capital of the Lanna Kingdom and a long-standing caravan crossroads, so handicrafts, textiles, silver and hill-tribe goods have accumulated here for generations — the very soul of this night market." },
-      { "title": "The Golden Clock Tower", "text": "At the market's heart stands the Golden Clock Tower, designed by Thawan Duchanee, a National Artist from Chiang Rai. Its golden crown glows as the city's favourite meeting point and a symbol of modern Chiang Rai." },
+      { "title": "The Golden Clock Tower", "text": "At the market's heart stands the Golden Art Clock Tower (Chiang Rai Clock Tower), designed and built in 2008 by Chalermchai Kositpipat — the artist behind Chiang Rai's famous White Temple (Wat Rong Khun). Its golden crown glows as the city's favourite meeting point and a symbol of modern Chiang Rai. It is often wrongly attributed to Thawan Duchanee, creator of the Black House Museum (Baandam Museum) — that artist is unrelated to this clock tower." },
       { "title": "A night-time cultural hub", "text": "Today the market blends commerce, food and performance, expressing a modern Chiang Rai identity that still keeps its Lanna cultural roots." },
       { "title": "Nearby historical landmarks", "text": "A short walk away is Wat Phra Kaew, the original home of the Emerald Buddha — Thailand's most revered image — alongside the King Mengrai Monument and the Mae Kok River, all anchoring the area's deep history." }
     ],
     "legend": {
       "title": "Local legend",
-      "text": "The striking Golden Clock Tower at the heart of the market was designed by Thawan Duchanee, a National Artist from Chiang Rai. Locals say its golden crown honours the glory of old Lanna, and it has become the meeting point everyone trusts."
+      "text": "The striking Golden Clock Tower at the heart of the market was designed in 2008 by Chalermchai Kositpipat, the artist behind Chiang Rai's White Temple. Locals say its golden crown honours the glory of old Lanna, and it has become the meeting point everyone trusts."
     },
     "didYouKnow": {
       "title": "Did you know?",
-      "text": "On weekends the Walking Street expands the market area even further, making it especially lively."
+      "text": "Chiang Rai Night Bazaar opens daily beside the Old Bus Terminal; if you visit on a Saturday or Sunday, you can also stroll the city's separate weekend walking streets — the Saturday Walking Street (Thanalai Road) and the Sunday Walking Street. These are different locations and run by different organisers from the night bazaar, so don't confuse them."
     },
     "sources": {
       "label": "Sources & declaration",
@@ -112,6 +115,7 @@
       "tag": "🚐",
       "title": "Getting there",
       "items": [
+        { "title": "Right by the Old Bus Terminal", "desc": "The market sits beside Chiang Rai Bus Terminal 1 (Old Bus Terminal) — backpackers step off and you're there" },
         { "title": "In town", "desc": "Walk from the Old City gate or Clock Tower in 10–15 minutes" },
         { "title": "Tuk-tuk / songthaew", "desc": "Red songthaews loop the city for 20–40 THB" },
         { "title": "Grab", "desc": "Easy to book via the app with clear pricing" }
@@ -135,6 +139,8 @@
     "dishes": [
       { "tag": "🍜", "name": "Khao soi", "price": "50–80 THB", "desc": "Curry-noodle soup, a Northern Thailand classic" },
       { "tag": "🌭", "name": "Sai ua", "price": "60–100 THB", "desc": "Northern herb sausage with chili dip" },
+      { "tag": "🍲", "name": "Khanom Jeen Nam Ngiew", "price": "50–90 THB", "desc": "Chiang Rai's most iconic local noodle soup — a red broth of dried cotton-tree flower and pork blood, sour and aromatic" },
+      { "tag": "🔥", "name": "Jim Jum (clay-pot hotpot)", "price": "100–200 THB", "desc": "The signature scene of the food court — slow-cooked in a clay pot; many visitors come just to eat hotpot while watching the show" },
       { "tag": "🍢", "name": "Satay / grill", "price": "10–20 THB/skewer", "desc": "Tender skewers with peanut sauce" },
       { "tag": "🥭", "name": "Mango sticky rice", "price": "50–70 THB", "desc": "A crowd-favourite sweet of ripe mango and warm sticky rice" }
     ],
@@ -198,6 +204,35 @@
     "plusCode": "WR4M+5M2 · Chiang Rai",
     "coords": "19.91°N, 99.83°E"
   },
+  "cultureShow": {
+    "label": "Cultural shows",
+    "heading": "Free shows at the night market",
+    "lead": "What sets Chiang Rai Night Bazaar apart from many others is its free traditional performances every night — the part locals are most proud of.",
+    "tip": "Head to the central stage area around 19:30–20:30 to catch free Lanna dance and traditional instrument performances.",
+    "stages": [
+      { "title": "Cultural Stage", "desc": "Deep inside the market, free Lanna traditional dance and classical music — the most ceremonial performance space." },
+      { "title": "Food Court Stage", "desc": "Accompanied by folk singing or contemporary acts; eat while you watch in a relaxed, lively atmosphere." }
+    ]
+  },
+  "nearby": {
+    "label": "10-minute walking loop",
+    "heading": "Worth a stroll nearby",
+    "lead": "All within walking distance of the market, these two landmarks fit perfectly into an evening route.",
+    "items": [
+      { "title": "Clock Tower light show", "desc": "Lights up at 19:00 / 20:00 / 21:00 nightly, about a 10-minute walk — the best photo spot before or after the market." },
+      { "title": "King Mengrai Monument", "desc": "Honouring King Mengrai, founder of Chiang Rai, about a 10-minute walk — a local landmark that explains the city's origins." }
+    ]
+  },
+  "tips": {
+    "label": "Culture & payment tips",
+    "heading": "A few reminders before you go",
+    "lead": "A few practical tips to make the experience smoother and more respectful of locals.",
+    "items": [
+      { "icon": "💵", "title": "Cash first", "desc": "Most stalls are cash-only (Thai baht); the food court also usually asks you to order and pay first — carry small change." },
+      { "icon": "🍽️", "title": "Order at the food court first", "desc": "At the food court you usually order and pay at the stall before sitting down — watch each stall's pickup flow." },
+      { "icon": "🤝", "title": "Bargain politely", "desc": "Respect hill-tribe craft makers; keep bargaining friendly — admire first, then negotiate." }
+    ]
+  },
   "footer": {
     "brand": {
       "name": "Chiang Rai Night Bazaar",
@@ -210,6 +245,8 @@
       { "href": "#history", "label": "History" },
       { "href": "#guide", "label": "Visit guide" },
       { "href": "#food", "label": "Food" },
+      { "href": "#culture", "label": "Cultural shows" },
+      { "href": "#nearby", "label": "Nearby" },
       { "href": "#gallery", "label": "Photos" },
       { "href": "#reviews", "label": "Reviews" },
       { "href": "#faq", "label": "FAQ" },
