@@ -113,6 +113,7 @@
       "title": "交通方式",
       "items": [
         { "title": "紧邻老客运站", "desc": "夜市就在清莱第一客运站（Chiang Rai Bus Terminal 1 / Old Bus Terminal）旁，背包客下车即到" },
+        { "title": "从机场出发", "desc": "清莱美法露国际机场（Mae Fah Luang–Chiang Rai International Airport，CEI）距市区约 8–10 公里，乘机场出租车或 Grab 约 20–30 分钟、200–300 泰铢可达；也可搭机场班车到市中心再转红色双条车。" },
         { "title": "市内步行", "desc": "从古城门或金钟塔步行约 10–15 分钟" },
         { "title": "嘟嘟车 / 双条车", "desc": "红色双条车绕城运行，约 20–40 泰铢" },
         { "title": "Grab", "desc": "用 App 叫车，价格清晰方便" }
