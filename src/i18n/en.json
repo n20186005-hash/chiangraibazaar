@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Chiang Rai Night Bazaar Guide | Night Market on Phahon Yothin Road",
-    "description": "Your complete guide to the Chiang Rai Night Bazaar: opening hours, how to get there, what to buy, bargaining tips, Northern Thai food, and a live map. Rated 4.2 from 15,199 Google reviews."
+    "title": "Chiang Rai Night Bazaar: Opening Hours, Food, Shows & Map (2026)",
+    "description": "Plan your visit to Chiang Rai Night Bazaar (เชียงรายไนท์บาร์ซาร์), the nightly night market next to Bus Terminal 1. Open daily 6 PM–11 PM with Northern Thai food courts, free Lanna cultural shows & handicrafts."
   },
   "header": {
     "home": "Home",
@@ -12,7 +12,11 @@
     "gallery": "Photos",
     "reviews": "Reviews",
     "faq": "FAQ",
-    "map": "Map"
+    "map": "Map",
+    "weather": "Weather",
+    "itineraries": "Routes",
+    "services": "Services",
+    "stewardship": "Ethics"
   },
   "hero": {
     "titleMain": "Chiang Rai Night Bazaar",
@@ -25,8 +29,13 @@
     "closedNow": "🔴 Closed right now",
     "checking": "Checking opening status…",
     "rating": "4.2",
-    "reviewCount": "15,199 Google reviews",
+    "reviewCount": "15,332 Google reviews",
+    "imgAlt": "Chiang Rai Night Bazaar - Main view of the night market in Chiang Rai, Thailand",
     "viewLocation": "View location on Google Maps",
+    "hoursShort": "Daily 6–11 PM",
+    "freeEntry": "Free entry",
+    "locationShort": "Next to Bus Terminal 1",
+    "mapsCta": "Open in Maps",
     "loading": "Loading live weather…",
     "liveWeather": "Current weather",
     "plannerTitle": "Plan your evening",
@@ -47,9 +56,10 @@
     "quoteAuthor": "A regular night-market visitor",
     "stats": [
       { "value": "4.2", "label": "Google rating" },
-      { "value": "15,199", "label": "reviews" },
+      { "value": "15,332", "label": "reviews" },
       { "value": "18:00–23:00", "label": "nightly" }
     ],
+    "breadcrumb": ["Chiang Rai Night Bazaar", "Chiang Rai", "Chiang Rai Province", "Thailand"],
     "highlights": [
       { "tag": "🛍️", "title": "Crafts & souvenirs", "desc": "Silk, silver, woodcarving and hill-tribe keepsakes" },
       { "tag": "🍜", "title": "Northern food & street eats", "desc": "Khao soi, sai ua sausage, or vegetarian options" },
@@ -174,8 +184,11 @@
     "label": "From visitors",
     "heading": "Chiang Rai Night Bazaar reviews",
     "intro": "A summary of what real visitors say on Google Reviews.",
-    "disclaimer": "Overall 4.2 from 15,199 reviews (Google)",
+    "disclaimer": "Overall 4.2 from 15,332 reviews (Google)",
     "declaration": "Reviews shown are summarised for illustration, not verbatim posts.",
+    "syncNote": "Rating and review count synced from Google Maps user reviews · September 2026 · ",
+    "syncNoteLink": "View all reviews on Google Maps↗",
+    "sourceStatement": "Synced from Google Maps user reviews, September 2026; copyright belongs to the original authors and Google Maps",
     "featured": [
       { "text": "Such a fun market to walk around — souvenirs and food, perfect after dinner.", "source": "— International visitor" },
       { "text": "The khao soi here is delicious and cheap, and the vendors are friendly.", "source": "— Domestic visitor" }
@@ -190,7 +203,8 @@
       { "text": "Arriving at 18:00 was just right, not too hot.", "rating": "5", "name": "V. K", "date": "2026-01" },
       { "text": "Affordable food, tried many things.", "rating": "4", "name": "N. Cha", "date": "2026-01" }
     ],
-    "viewLocation": "View location on Google Maps"
+    "viewLocation": "View location on Google Maps",
+    "viewAll": "View all reviews on Google Maps"
   },
   "mapSection": {
     "label": "Map & directions",
@@ -203,7 +217,11 @@
     ],
     "address": "WR4M+5M2, Tambon Wiang, Mueang Chiang Rai District, Chiang Rai 57000",
     "plusCode": "WR4M+5M2 · Chiang Rai",
-    "coords": "19.91°N, 99.83°E"
+    "coords": "19.91°N, 99.83°E",
+    "officialInfo": {
+      "lead": "For official updates and regional tourism information, visit the",
+      "linkLabel": "Tourism Authority of Thailand Official Portal"
+    }
   },
   "cultureShow": {
     "label": "Cultural shows",
@@ -234,6 +252,241 @@
       { "icon": "🤝", "title": "Bargain politely", "desc": "Respect hill-tribe craft makers; keep bargaining friendly — admire first, then negotiate." }
     ]
   },
+  "markets": {
+    "label": "Market guide",
+    "heading": "Chiang Rai's three night markets — don't mix them up",
+    "lead": "Many visitors confuse the daily Night Bazaar with the Saturday and Sunday walking streets. They run in different locations, on different days. This guide covers the nightly Chiang Rai Night Bazaar.",
+    "cols": {
+      "name": "Market",
+      "days": "Open",
+      "location": "Location",
+      "features": "Highlights"
+    },
+    "rows": [
+      {
+        "name": "Chiang Rai Night Bazaar (this guide)",
+        "days": "Daily 18:00 – 23:00",
+        "location": "Phahon Yothin Rd, next to Bus Terminal 1",
+        "features": "Permanent stalls & food courts, free shows on two stages, mostly under cover in rain",
+        "highlight": true
+      },
+      {
+        "name": "Saturday Walking Street",
+        "days": "Saturdays only, ~17:00 – 22:00",
+        "location": "Thanalai Road",
+        "features": "Handicrafts & street food, one day only",
+        "highlight": false
+      },
+      {
+        "name": "Sunday Happy Street",
+        "days": "Sundays only, ~17:00 – 22:00",
+        "location": "Sankhongnoi Road",
+        "features": "Local crafts & snacks, laid-back vibe",
+        "highlight": false
+      }
+    ],
+    "note": "The walking streets are within easy reach of the Night Bazaar — on weekends you can do both. Times can change, so check locally on the day."
+  },
+  "weather": {
+    "label": "Live weather",
+    "heading": "Tonight's weather & 7-day forecast",
+    "lead": "The bazaar is an open-air market — a quick weather check tells you whether to pack an umbrella and what to wear.",
+    "currentLabel": "Right now",
+    "feelsLike": "Feels like",
+    "humidity": "Humidity",
+    "wind": "Wind",
+    "rainChance": "Rain chance",
+    "forecastLabel": "7-day forecast",
+    "updatedLabel": "Updated",
+    "uvLabel": "Sun exposure",
+    "adviceTitle": "Today's smart advice",
+    "advice": {
+      "labels": {
+        "outfit": "What to wear",
+        "activity": "Plans & timing",
+        "items": "What to bring"
+      },
+      "noAlerts": "No special weather warnings — plan your visit with confidence",
+      "uv": {
+        "strong": "Strong sun",
+        "moderate": "Moderate sun",
+        "low": "Low UV"
+      },
+      "wind": {
+        "calm": "Light breeze",
+        "breeze": "Breezy",
+        "windy": "Strong wind"
+      },
+      "alerts": {
+        "thunder": "Thunderstorm risk: don't shelter under trees or in open areas — stay indoors.",
+        "heavyRain": "Heavy rain: avoid low-lying, flood-prone stretches and take extra care on the roads at night.",
+        "strongWind": "Strong winds: keep clear of billboards, temporary structures and large trees.",
+        "fog": "Poor visibility: if you're driving, slow down and keep your distance.",
+        "extremeHeat": "Extreme heat: reschedule outdoor plans and watch for heat exhaustion."
+      },
+      "outfit": {
+        "waterproof": "Rain is likely — a waterproof jacket or quick-dry clothes work best.",
+        "lightClothes": "Hot and humid — light, breathable clothing is the most comfortable.",
+        "jacket": "Big day-to-night temperature swing — bring a light layer you can put on and take off.",
+        "warmClothes": "It gets cold — pack a warm jacket and a scarf.",
+        "windWear": "Windy: hats blow off easily, and loose long skirts aren't a good idea."
+      },
+      "activity": {
+        "marketIndoor": "Rain is likely: most market stalls are under cover so you can still browse, but allow extra time to wait out showers.",
+        "avoidNoon": "Hot in the daytime: skip midday and come to the market after the lights come on at dusk.",
+        "slippery": "Paths may be slippery — wear shoes with good grip.",
+        "niceEvening": "Lovely weather: a great evening for the market and a free Lanna dance show.",
+        "photoSoft": "Soft light and no harsh sun — perfect for photos as you browse."
+      },
+      "items": {
+        "umbrella": "Umbrella or light raincoat",
+        "raincoat": "In heavy rain and wind, a raincoat beats a long umbrella",
+        "sunKit": "Sunscreen, sunglasses and a sun hat",
+        "water": "Plenty of drinking water",
+        "mask": "Face mask (for dust)"
+      }
+    },
+    "unavailable": "Weather information is temporarily unavailable; please check the latest forecast before heading out.",
+    "codes": {
+      "clear": "Clear",
+      "partlyCloudy": "Partly cloudy",
+      "cloudy": "Overcast",
+      "fog": "Fog",
+      "drizzle": "Drizzle",
+      "rain": "Rain",
+      "shower": "Showers",
+      "snow": "Snow",
+      "thunder": "Thunderstorm"
+    }
+  },
+  "seasonal": {
+    "label": "Seasonal strategy",
+    "heading": "When is the best season to visit?",
+    "lead": "This strategy table is based on Chiang Rai's 30-year climate normals and the market's actual operating patterns, to help you pick the best travel window.",
+    "sourceNote": "Climate patterns reflect 30-year averages for pre-trip reference; for your travel dates, rely on the live forecast above.",
+    "cols": {
+      "season": "Season",
+      "climate": "Climate",
+      "crowd": "Crowds & feel",
+      "strategy": "Strategy",
+      "rating": "Rating"
+    },
+    "rows": [
+      {
+        "season": "Cool season · Nov–Feb",
+        "climate": "Dry with little rain; warm days and mild nights around 15–20°C",
+        "crowd": "Peak tourist season — busiest and most festive",
+        "strategy": "The best time to visit. Bring a light jacket for the evening; on weekends arrive before 18:00 to beat the crowds.",
+        "rating": "★★★★★"
+      },
+      {
+        "season": "Hot season · Mar–May",
+        "climate": "Hot and dry, often above 35°C by day; smoke haze possible in Mar–Apr",
+        "crowd": "Moderate, busier around Songkran in April",
+        "strategy": "Enter after 18:00 to escape the heat; watch air-quality updates and bring a mask if sensitive.",
+        "rating": "★★★☆☆"
+      },
+      {
+        "season": "Rainy season · Jun–Oct",
+        "climate": "Frequent afternoon and evening showers; humid but still warm",
+        "crowd": "Low season — a more relaxed browse",
+        "strategy": "Carry an umbrella. After the rain it feels cooler, and most stalls have cover, so light rain rarely spoils a visit.",
+        "rating": "★★★★☆"
+      }
+    ]
+  },
+  "itineraries": {
+    "label": "Itineraries",
+    "heading": "Choose your way around, by group and pace",
+    "lead": "Routes designed around who you're travelling with and how much walking suits you — type-level suggestions only, no specific shops.",
+    "halfDay": {
+      "tag": "Half-day route · 2–3 hours",
+      "steps": [
+        { "time": "18:00", "text": "Enter from the Clock Tower side and browse the handicraft lanes first, while stalls are lighting up and crowds are thin" },
+        { "time": "19:00", "text": "Catch a free Lanna dance and traditional music performance at the cultural stage" },
+        { "time": "20:00", "text": "Move on to the food court — eat Northern Thai snacks while enjoying live singing" },
+        { "time": "21:00", "text": "Wind down: last souvenirs, or an affordable foot massage" }
+      ]
+    },
+    "fullDay": {
+      "tag": "Full-day route · daytime + market",
+      "steps": [
+        { "time": "Afternoon", "text": "Start with the walking-loop landmarks: Wat Phra Kaew and the King Mengrai Monument" },
+        { "time": "17:30", "text": "Have an early dinner around Phahon Yothin Road while waiting for the lights" },
+        { "time": "18:30", "text": "Cover the market's three main zones: handicrafts, food court and show stages" },
+        { "time": "21:00", "text": "End the day with the Clock Tower light show on the hour, then stroll back into town" }
+      ]
+    },
+    "audienceTitle": "Tailored by traveller type",
+    "audiences": [
+      {
+        "tag": "Families",
+        "title": "Easy pace · eat & play",
+        "desc": "Built around the food court and stage shows to avoid long shopping walks; arrive by 18:30 and leave before 21:00.",
+        "points": [
+          "Prioritise the cultural stage — kids love the shows",
+          "The food court keeps ordering simple and seats close together",
+          "The 18:30–21:00 window is the most comfortable with children"
+        ]
+      },
+      {
+        "tag": "Photographers",
+        "title": "Light · people · streets",
+        "desc": "From the first lights to closing, the market offers rich layered light; add nearby landmarks for a full night set.",
+        "points": [
+          "Shoot the stalls lighting up and crowds gathering around 18:00",
+          "Clock Tower light shows at 19:00 / 20:00 / 21:00",
+          "Close-ups of hill-tribe crafts and street portraits"
+        ]
+      },
+      {
+        "tag": "Low-mobility & accessible",
+        "title": "Slow pace · minimal walking",
+        "desc": "The market area is flat and compact; the plan below rests on seating points and the shortest walking lines.",
+        "points": [
+          "Enter from the Old Bus Terminal side — the shortest walk to the core",
+          "Food court and stage are adjacent: sit, rest and watch",
+          "Nearby malls and hotel lobbies have visitor restrooms"
+        ]
+      }
+    ]
+  },
+  "services": {
+    "label": "Visitor services & facilities",
+    "heading": "Restrooms, parking, food — the practical rundown",
+    "lead": "A neutral, type-level overview of nearby facilities to help you plan ahead; conditions on the ground may vary.",
+    "neutralNote": "This is a non-profit educational guide: we recommend no specific businesses and stay strictly neutral. Facilities may change — please rely on what you find on site.",
+    "items": [
+      { "icon": "🚻", "title": "Restrooms (WC)", "desc": "Public restrooms serve the market area, some with a small fee (around 5–10 THB); nearby malls and hotel lobbies often have restrooms for visitors too." },
+      { "icon": "🅿️", "title": "Parking", "desc": "Expect street-side spaces and paid public lots nearby; spots get tight at dusk, so arrive early or come by songthaew or on foot." },
+      { "icon": "🍽️", "title": "Food & drink", "desc": "The market brings together snack stalls, Northern Thai restaurants and a food court, including vegetarian options; convenience stores and local eateries sit nearby." },
+      { "icon": "🏨", "title": "Lodging", "desc": "Budget guesthouses, hostels and boutique hotels are all within walking distance; book ahead in high season." },
+      { "icon": "🏪", "title": "Shops & convenience", "desc": "24-hour convenience stores dot the surroundings, with supermarkets for water, snacks and daily necessities." },
+      { "icon": "⛽", "title": "Fuel & charging", "desc": "Petrol stations line the main roads; EV charging points are growing across the city — plan refuelling ahead if driving or renting an EV." },
+      { "icon": "💳", "title": "Money & payment", "desc": "ATMs and currency-exchange counters are easy to find; most stalls are cash-first, some take local mobile payment — keep some Thai baht handy." },
+      { "icon": "🚕", "title": "Getting around", "desc": "Red songthaews are the main local transport, hop-on hop-off; ride-hailing apps work too, and booking early helps at the late-night rush." },
+      { "icon": "💊", "title": "Health & pharmacy", "desc": "Pharmacies nearby stock common medicines, mosquito repellent and sunscreen; hospitals and clinics are available in the city centre." }
+    ]
+  },
+  "stewardship": {
+    "label": "Culture & responsibility",
+    "heading": "Be a welcome visitor",
+    "lead": "The market is local people's livelihood and a shop window for Lanna culture. A little background knowledge and courtesy go a long way.",
+    "eduTitle": "Understanding: the culture behind the market",
+    "edu": [
+      { "tag": "History", "title": "From caravan route to tourist landmark", "text": "Founded in 1262, Chiang Rai was the Lanna Kingdom's first capital and a caravan crossroads between Yunnan, Burma and Siam — its market tradition is centuries old. Since the 1990s it has grown into the tourist landmark you see today." },
+      { "tag": "Culture", "title": "A showcase of hill-tribe crafts", "text": "Textiles, silverwork and embroidery by the Akha, Karen, Lisu, Lahu and Hmong communities are the market's most meaningful goods — every handmade piece carries generations of skill." },
+      { "tag": "Legend", "title": "\"Meet you under the Clock Tower\"", "text": "The Golden Clock Tower was designed by Chalermchai Kositpipat, artist of the White Temple. Its glowing crown is now the city's default meeting point, anchoring countless \"meet you under the Clock Tower\" promises." }
+    ],
+    "responsibilityTitle": "Visitor responsibilities",
+    "responsibilities": [
+      { "tag": "01", "title": "Reduce waste", "text": "Bring your own bag and bottle, and use the designated bins to help keep the street clean." },
+      { "tag": "02", "title": "Respect makers & vendors", "text": "Crafts embody generations of hill-tribe skill — bargain kindly, and always ask before photographing people or their goods." },
+      { "tag": "03", "title": "Dress & behave considerately", "text": "Thailand values politeness: cover shoulders and knees at nearby temples, and keep noise down during performances." },
+      { "tag": "04", "title": "Shop sensibly", "text": "Be wary of 'designer' goods at implausibly low prices; wildlife products such as ivory are illegal — never buy them." },
+      { "tag": "05", "title": "Care for animals & nature", "text": "Skip rides, feeding and other animal-entertainment activities, and choose responsible ways to travel." }
+    ]
+  },
   "footer": {
     "brand": {
       "name": "Chiang Rai Night Bazaar",
@@ -251,13 +504,22 @@
       { "href": "#gallery", "label": "Photos" },
       { "href": "#reviews", "label": "Reviews" },
       { "href": "#faq", "label": "FAQ" },
-      { "href": "#map", "label": "Map" }
+      { "href": "#map", "label": "Map" },
+      { "href": "#weather", "label": "Weather" },
+      { "href": "#seasonal", "label": "Seasonal tips" },
+      { "href": "#itineraries", "label": "Itineraries" },
+      { "href": "#services", "label": "Visitor services" },
+      { "href": "#stewardship", "label": "Culture & ethics" }
     ],
     "noteTitle": "Good to know",
     "note": "Check the latest times and prices before you go, as they can change.",
     "mapsLabel": "Google Maps →",
     "sourcesTitle": "Reference sources",
     "sourcesNote": "Information is compiled from the following sources to support content credibility.",
+    "reviewsSyncLabel": "Reviews · Synced September 2026",
+    "reviewsSyncNote": "Ratings and reviews are synced from Google Maps user reviews as of September 2026; copyright belongs to the original authors and Google Maps.",
+    "reviewsSyncLink": "View all reviews on Google Maps",
+    "imageCopyright": "All images shown on this website are the property and copyright of their original photographers.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
     "cookies": "Cookie Settings",

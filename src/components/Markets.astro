@@ -1,0 +1,43 @@
+---
+interface Props {
+  messages: Record<string, any>;
+}
+const { messages } = Astro.props;
+const m = messages.markets;
+---
+
+<section id="markets" class="py-20 bg-ivoryDim text-ink scroll-mt-20">
+  <div class="max-w-7xl mx-auto px-5">
+    <p class="font-hand text-gold text-xl md:text-2xl">{m.label}</p>
+    <h2 class="font-display font-semibold text-3xl md:text-5xl mt-2">{m.heading}</h2>
+    <p class="mt-4 max-w-3xl text-ink/70">{m.lead}</p>
+
+    <div class="mt-10 overflow-x-auto rounded-2xl border border-ink/10 bg-ivory shadow-sm">
+      <table class="w-full text-sm text-left min-w-[720px]">
+        <thead>
+          <tr class="border-b border-ink/10 text-xs uppercase tracking-wide text-ink/55">
+            <th class="px-5 py-4 font-semibold">{m.cols.name}</th>
+            <th class="px-5 py-4 font-semibold">{m.cols.days}</th>
+            <th class="px-5 py-4 font-semibold">{m.cols.location}</th>
+            <th class="px-5 py-4 font-semibold">{m.cols.features}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {m.rows.map((row: any) => (
+            <tr class:list={["border-b border-ink/5 last:border-b-0 align-top", { 'bg-gold/15': row.highlight }]}>
+              <td class="px-5 py-4 font-semibold text-ink">
+                {row.highlight && <span class="mr-1.5 text-gold" aria-hidden="true">★</span>}
+                {row.name}
+              </td>
+              <td class="px-5 py-4 text-ink/80 whitespace-nowrap">{row.days}</td>
+              <td class="px-5 py-4 text-ink/80">{row.location}</td>
+              <td class="px-5 py-4 text-ink/80">{row.features}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <p class="mt-5 text-sm text-ink/60">{m.note}</p>
+  </div>
+</section>

@@ -11,7 +11,7 @@ const { type } = Astro.props;
 const { lang, messages } = await getI18n(Astro.url);
 const doc = (messages.legal as any)[type];
 ---
-<BaseLayout lang={lang} title={doc.title} description={doc.title}>
+<BaseLayout lang={lang} title={doc.title} description={doc.title} noindex>
   <Header lang={lang} messages={messages} />
   <main class="mx-auto max-w-3xl px-5 py-14 text-ink/90 leading-relaxed">
     <h1 class="font-display text-3xl md:text-4xl text-gold mb-2">{doc.title}</h1>

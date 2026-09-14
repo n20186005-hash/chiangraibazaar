@@ -2,26 +2,58 @@
 import '../styles/global.css';
 import { siteConfig } from '../config';
 import { htmlLang, languagesList, type Lang } from '../i18n/ui';
+import thMessages from '../i18n/th.json';
+import enMessages from '../i18n/en.json';
+import zhMessages from '../i18n/zh.json';
 
 interface Props {
   lang: Lang;
   title: string;
   description: string;
+  /** Set true on auxiliary pages (legal/tool pages) to keep them out of search indexes. */
+  noindex?: boolean;
 }
-const { lang, title, description } = Astro.props;
-const canonical = `${siteConfig.domain}/${lang}/`;
+const { lang, title, description, noindex = false } = Astro.props;
+
+// Canonical URL follows the site-wide convention:
+// language roots keep a trailing slash (/en/), deeper pages do not (/en/privacy-policy).
+const rawPath = Astro.url.pathname.replace(/\/+$/, '') || '/';
+const isLangRoot = /^\/(th|en|zh)$/.test(rawPath);
+const canonicalPath = isLangRoot ? `${rawPath}/` : rawPath;
+const canonical = `${siteConfig.domain}${canonicalPath}`;
+
+const messagesMap: Record<Lang, any> = { th: thMessages, en: enMessages, zh: zhMessages };
+const faqs: { q: string; a: string }[] = messagesMap[lang].guide.faqs;
+const heroImageAlt: string = messagesMap[lang].hero.imgAlt;
+
+const heroImage = `${siteConfig.domain}/gallery/chiang-rai-night-bazaar-1.jpg`;
 
 const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': ['TouristAttraction', 'NightMarket'],
+    '@id': `${siteConfig.domain}/#attraction`,
     name: siteConfig.name[lang],
+    alternateName: [
+      siteConfig.name.en,
+      siteConfig.name.th,
+      siteConfig.name.zh,
+      `Chiang Rai ${siteConfig.name.en}`,
+    ],
     description,
-    image: `${siteConfig.domain}/gallery/chiang-rai-night-bazaar-1.jpg`,
+    image: [
+      heroImage,
+      `${siteConfig.domain}/gallery/chiang-rai-night-bazaar-8.jpg`,
+    ],
     url: canonical,
+    isAccessibleForFree: true,
+    hasMap: siteConfig.mapsUrl,
     address: {
       '@type': 'PostalAddress',
       streetAddress: siteConfig.address[lang],
+      addressLocality: 'Chiang Rai',
+      addressRegion: 'Chiang Rai Province',
+      postalCode: '57000',
       addressCountry: 'TH',
     },
     geo: {
@@ -42,7 +74,7 @@ const jsonLd = [
         closes: '23:00',
       },
     ],
-    sameAs: siteConfig.sameAs,
+    sameAs: [...siteConfig.sameAs, siteConfig.govtTourismUrl],
     publicAccess: true,
     touristType: 'Leisure, Shopping, Food',
     openingHours: 'Mo-Su 18:00-23:00',
@@ -50,25 +82,15 @@ const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
-    mainEntity: [
-      {
-        '@type': 'Question',
-        name: 'What are the opening hours?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'The night bazaar is open every day from 18:00 to 23:00.'
-        }
+    mainEntity: faqs.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: f.a,
       },
-      {
-        '@type': 'Question',
-        name: 'How do I get there?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'It sits in central Chiang Rai on Phahon Yothin Road, a 10–15 minute walk from the Old City gate or the Golden Clock Tower. Red songthaews and Grab also serve the area.'
-        }
-      }
-    ]
-  }
+    })),
+  },
 ];
 ---
 
@@ -78,20 +100,25 @@ const jsonLd = [
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/jpeg" href={`/gallery/chiang-rai-night-bazaar-1.jpg`} />
+    <link rel="apple-touch-icon" href={`/gallery/chiang-rai-night-bazaar-1.jpg`} />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="theme-color" content="#071a1c" />
     <title>{title}</title>
     <meta name="description" content={description} />
+    {noindex && <meta name="robots" content="noindex, follow" />}
     <link rel="canonical" href={canonical} />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content={htmlLang[lang]} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={`${siteConfig.domain}/gallery/chiang-rai-night-bazaar-1.jpg`} />
+    <meta property="og:image:alt" content={heroImageAlt} />
     <meta property="og:url" content={canonical} />
     <meta name="twitter:card" content="summary_large_image" />
     {languagesList.map((l) => (
       <link rel="alternate" hreflang={htmlLang[l]} href={`${siteConfig.domain}/${l}/`} />
     ))}
-    <link rel="alternate" hreflang="x-default" href={`${siteConfig.domain}/th/`} />
+    <link rel="alternate" hreflang="x-default" href={`${siteConfig.domain}/en/`} />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -112,5 +139,12 @@ const jsonLd = [
   </head>
   <body class="grain">
     <slot />
+    <script is:inline>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function () {
+          navigator.serviceWorker.register('/sw.js').catch(function () {});
+        });
+      }
+    </script>
   </body>
 </html>

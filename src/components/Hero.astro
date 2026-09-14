@@ -18,7 +18,7 @@ const coordsLabel = siteConfig.coords.label[lang];
 ---
 
 <section id="home" class="relative min-h-screen flex items-end overflow-hidden">
-  <img src={heroImg} alt={main} class="absolute inset-0 w-full h-full object-cover" />
+  <img src={heroImg} alt={hero.imgAlt} loading="eager" class="absolute inset-0 w-full h-full object-cover" />
   <div class="absolute inset-0 bg-gradient-to-t from-teakDeep via-teakDeep/70 to-teak/40"></div>
   <div class="hero-glow absolute inset-0"></div>
 
@@ -37,6 +37,13 @@ const coordsLabel = siteConfig.coords.label[lang];
         <a href="#food" class="inline-flex items-center gap-2 border border-gold/50 text-ivory px-6 py-3 rounded-full hover:border-goldBright hover:text-goldBright transition-colors">
           {hero.cta2}
         </a>
+      </div>
+
+      <!-- Quick facts: hours / entry fee / location -->
+      <div class="mt-6 flex flex-wrap gap-x-5 gap-y-2 text-sm text-ivory/85">
+        <span class="flex items-center gap-1.5">🕒 {hero.hoursShort}</span>
+        <span class="flex items-center gap-1.5">🎟️ {hero.freeEntry}</span>
+        <span class="flex items-center gap-1.5">📍 {hero.locationShort}</span>
       </div>
 
       <div class="mt-8 flex flex-wrap items-center gap-5 text-sm text-ivory/80">
@@ -85,6 +92,17 @@ const coordsLabel = siteConfig.coords.label[lang];
       </div>
     </div>
   </div>
+
+  <!-- Mobile floating Maps button -->
+  <a
+    href={mapsUrl}
+    target="_blank"
+    rel="noopener"
+    class="lg:hidden fixed bottom-5 right-5 z-40 inline-flex items-center gap-2 rounded-full bg-gold text-teak font-semibold px-5 py-3 shadow-xl shadow-teakDeep/40"
+  >
+    <span aria-hidden="true">🧭</span>
+    {hero.mapsCta}
+  </a>
 </section>
 
 <script is:inline define:vars={{ lang, weatherError: hero.weatherError }}>

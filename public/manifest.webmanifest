@@ -1,0 +1,28 @@
+{
+  "name": "Chiang Rai Night Bazaar (เชียงรายไนท์บาร์ซาร์)",
+  "short_name": "CR Night Bazaar",
+  "description": "Visitor guide to the Chiang Rai Night Bazaar: opening hours, food, culture shows, reviews and map.",
+  "start_url": "/th/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#071a1c",
+  "theme_color": "#071a1c",
+  "lang": "th",
+  "dir": "ltr",
+  "categories": ["travel", "food", "shopping"],
+  "icons": [
+    {
+      "src": "/gallery/chiang-rai-night-bazaar-1.jpg",
+      "sizes": "any",
+      "type": "image/jpeg",
+      "purpose": "any"
+    },
+    {
+      "src": "/gallery/chiang-rai-night-bazaar-8.jpg",
+      "sizes": "any",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ]
+}

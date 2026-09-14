@@ -17,7 +17,13 @@ export const siteConfig = {
     }
   },
   rating: '4.2',
-  reviewCount: '15,199',
+  reviewCount: '15,332',
+  reviewsSyncDate: {
+    th: 'กันยายน 2026',
+    en: 'September 2026',
+    zh: '2026 年 9 月'
+  },
+  govtTourismUrl: 'https://www.tourismthailand.org',
   category: {
     th: 'ไนท์บาซาร์',
     en: 'Night Bazaar',

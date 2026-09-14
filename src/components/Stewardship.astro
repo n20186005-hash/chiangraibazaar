@@ -1,0 +1,50 @@
+---
+import type { Lang } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+  messages: Record<string, any>;
+}
+const { messages } = Astro.props;
+const st = messages.stewardship;
+---
+
+<section id="stewardship" class="py-20 bg-teakDeep text-ivory">
+  <div class="max-w-7xl mx-auto px-5">
+    <p class="font-hand text-gold text-xl md:text-2xl">{st.label}</p>
+    <h2 class="font-display font-semibold text-3xl md:text-5xl mt-2">{st.heading}</h2>
+    <p class="mt-4 max-w-3xl text-ivory/80">{st.lead}</p>
+
+    <div class="grid lg:grid-cols-12 gap-10 mt-10">
+      <!-- Science / culture context -->
+      <div class="lg:col-span-6">
+        <h3 class="font-display text-2xl font-semibold text-goldBright">{st.eduTitle}</h3>
+        <div class="mt-5 space-y-4">
+          {st.edu.map((e: any) => (
+            <div class="rounded-2xl border border-gold/25 bg-teak/60 p-5">
+              <span class="chip text-goldBright border-gold/40">{e.tag}</span>
+              <div class="font-semibold text-ivory mt-3">{e.title}</div>
+              <p class="text-sm text-ivory/75 mt-1.5 leading-relaxed">{e.text}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <!-- Visitor responsibilities -->
+      <div class="lg:col-span-6">
+        <h3 class="font-display text-2xl font-semibold text-goldBright">{st.responsibilityTitle}</h3>
+        <div class="mt-5 space-y-3">
+          {st.responsibilities.map((r: any) => (
+            <div class="flex gap-4 rounded-2xl border border-gold/20 bg-ivory/5 p-4">
+              <span class="font-display text-gold text-xl">{r.tag}</span>
+              <div>
+                <div class="font-semibold text-ivory">{r.title}</div>
+                <p class="text-sm text-ivory/70 mt-1">{r.text}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
