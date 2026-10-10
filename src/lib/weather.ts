@@ -46,7 +46,7 @@ export async function getWeather(): Promise<WeatherData | null> {
   try {
     // `cf` is honoured on Cloudflare Workers (edge cache); ignored elsewhere.
     const res = await fetch(API_URL, { cf: { cacheTtl: 1800, cacheEverything: true } } as any);
-    if (!res.ok) return cache;
+    if (!res.ok) return cache && Date.now() - cache.fetchedAt < TTL_MS ? cache : null;
 
     const json: any = await res.json();
     if (!json?.current || !json?.daily?.time?.length) return cache;
@@ -75,8 +75,8 @@ export async function getWeather(): Promise<WeatherData | null> {
     cache = data;
     return data;
   } catch {
-    // Network failure — fall back to the last successful payload if available.
-    return cache;
+    // Network failure — only serve cached data if still fresh; never show stale forecast.
+    return cache && Date.now() - cache.fetchedAt < TTL_MS ? cache : null;
   }
 }
 

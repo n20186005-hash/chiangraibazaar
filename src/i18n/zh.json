@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "清莱夜市 Chiang Rai Night Bazaar 攻略：营业时间、美食、表演与地图",
-    "description": "清莱夜市（Chiang Rai Night Bazaar）完整指南。每日 18:00-23:00 营业，紧邻旧客运站（Bus Terminal 1）。泰北小吃美食广场、免费兰纳歌舞表演与手工艺品摊位信息，附实时地图。"
+    "description": "清莱夜市（Chiang Rai Night Bazaar）完整指南。每日 18:30-23:00 营业，紧邻旧客运站（Bus Terminal 1）。泰北小吃美食广场、免费兰纳歌舞表演与手工艺品摊位信息，附实时地图。"
   },
   "header": {
     "home": "首页",
@@ -26,13 +26,16 @@
     "cta1": "规划行程",
     "cta2": "看看美食",
     "rating": "4.2",
-    "reviewCount": "15,332 条 Google 评价",
+    "reviewCount": "15,392 条 Google 评价",
     "imgAlt": "清莱夜市主视觉 —— 泰国清莱市中心夜市夜景",
     "viewLocation": "在 Google 地图上查看位置",
-    "hoursShort": "每日 18:00–23:00",
+    "hoursShort": "每日 18:30–23:00",
     "freeEntry": "免费入场",
     "locationShort": "老客运站旁",
     "mapsCta": "地图导航",
+    "openNow": "🟢 今夜 18:30 开放",
+    "closedNow": "🔴 现在未开放",
+    "checking": "正在确认开放状态…",
     "loading": "正在加载实时天气…",
     "liveWeather": "当前天气",
     "plannerTitle": "规划你的夜晚",
@@ -40,7 +43,7 @@
     "goldenHourLabel": "营业时间",
     "crowdWarningLabel": "高峰时段",
     "crowdAfter": "20:00 – 22:00",
-    "lightCaption": "每日 18:00 – 23:00",
+    "lightCaption": "每日 18:30 – 23:00",
     "weatherError": "实时天气暂时无法加载"
   },
   "about": {
@@ -53,8 +56,8 @@
     "quoteAuthor": "一位常来的夜市熟客",
     "stats": [
       { "value": "4.2", "label": "Google 评分" },
-      { "value": "15,332", "label": "条评价" },
-      { "value": "18:00–23:00", "label": "每日开放" }
+      { "value": "15,392", "label": "条评价" },
+      { "value": "18:30–23:00", "label": "每日开放" }
     ],
     "breadcrumb": ["清莱夜市", "清莱", "清莱府", "泰国"],
     "highlights": [
@@ -74,13 +77,13 @@
     "intro": "20 世纪 90 年代，清莱逐渐成为游客前往金三角的中转站，夜市随之兴起；然而这片土地所积淀的兰纳（Lanna）历史与文化之根，远比夜市本身悠久得多。",
     "blocks": [
       { "title": "兰纳王国的根基", "text": "清莱曾是兰纳王国的都城，也是历史悠久的马帮要道，手工艺品、织布、银饰与山地族商品在此积淀数代，成为这座夜市的灵魂所在。" },
-      { "title": "金钟塔——城市地标", "text": "夜市核心矗立着金色艺术钟楼（Chiang Rai Clock Tower），由清莱白庙（Wat Rong Khun）设计者、国家艺术家许龙才（Chalermchai Kositpipat）于 2008 年设计建造。金顶在夜色中闪耀，是全城最受欢迎的会合点，也是现代清莱的象征。常被误传为黑屋博物馆（Baandam Museum）创建者塔万·杜查尼（Thawan Duchanee）的作品——后者实为黑屋博物馆的作者，与此钟楼无关。" },
+      { "title": "金钟塔——城市地标", "text": "夜市附近矗立着金色艺术钟楼（Chiang Rai Clock Tower），由清莱白庙（Wat Rong Khun）设计者、国家艺术家许龙才（Chalermchai Kositpipat）于 2008 年设计建造。金顶在夜色中闪耀，是全城最受欢迎的会合点，也是现代清莱的象征。常被误传为黑屋博物馆（Baandam Museum）创建者塔万·杜查尼（Thawan Duchanee）的作品——后者实为黑屋博物馆的作者，与此钟楼无关。" },
       { "title": "夜间的文化汇聚地", "text": "如今的夜市融合商业、美食与表演，展现出当代清莱的个性，却依然保留着兰纳文化的根脉。" },
       { "title": "周边的历史地标", "text": "步行不远即是玉佛寺（Wat Phra Kaew）——泰国最神圣的玉佛（Emerald Buddha）曾经供奉之地；此外还有孟莱王纪念碑与 Kok 河，共同为这片区域奠定了深厚的历史分量。" }
     ],
     "legend": {
       "title": "当地传说",
-      "text": "夜市中央醒目的金钟塔由清莱白庙设计者许龙才（Chalermchai Kositpipat）于 2008 年设计。当地人说，金顶象征着昔日兰纳的辉煌，如今它已成为人人信赖的会合点。"
+      "text": "夜市附近醒目的金钟塔由清莱白庙设计者许龙才（Chalermchai Kositpipat）于 2008 年设计。当地人说，金顶象征着昔日兰纳的辉煌，如今它已成为人人信赖的会合点。"
     },
     "didYouKnow": {
       "title": "你知道吗？",
@@ -102,9 +105,10 @@
     "hours": {
       "tag": "🕒",
       "title": "营业时间",
-      "time": "18:00 – 23:00（每日）",
+      "time": "18:30 – 23:00（每日）",
+      "verified": "每日 18:30–23:00 开放，依据清莱市政府旅游信息 · 核实于 2026 年 10 月",
       "items": [
-        { "label": "开摊", "value": "18:00" },
+        { "label": "开摊", "value": "18:30" },
         { "label": "最热闹", "value": "20:00 – 22:00" },
         { "label": "收摊", "value": "23:00" }
       ]
@@ -181,25 +185,16 @@
     "label": "游客声音",
     "heading": "清莱夜市评价",
     "intro": "汇总自 Google 评价中真实游客的反馈。",
-    "disclaimer": "综合评分 4.2，共 15,332 条评价（Google）",
+    "disclaimer": "综合评分 4.2，共 15,392 条评价（Google）",
     "declaration": "所示评价为便于展示的摘要，并非原文逐字转载。",
-    "syncNote": "评分与评价数同步自谷歌地图（Google Maps）用户评价 · 2026 年 9 月 · ",
+    "syncNote": "评分与评价数同步自谷歌地图（Google Maps）用户评价 · 2026 年 10 月 · ",
     "syncNoteLink": "点击查看谷歌地图全部评价↗",
-    "sourceStatement": "同步自 Google 地图用户评价，同步时间 2026 年 9 月；版权归原作者与 Google 地图所有",
+    "sourceStatement": "同步自 Google 地图用户评价，同步时间 2026 年 10 月；版权归原作者与 Google 地图所有",
     "featured": [
       { "text": "很好逛的夜市，纪念品和美食都有，晚饭后散散步最合适。", "source": "— 外国游客" },
       { "text": "这里的咖喱面又便宜又好吃，摊主也很友善。", "source": "— 本地游客" }
     ],
-    "items": [
-      { "text": "氛围很好，能逛很久，纪念品超多。", "rating": "5", "name": "A. Suwan", "date": "2026-05" },
-      { "text": "美食种类多，最爱酸肉肠和咖喱面。", "rating": "5", "name": "K. Phrom", "date": "2026-04" },
-      { "text": "要会砍价，有些摊开价偏高。", "rating": "4", "name": "M. Lee", "date": "2026-03" },
-      { "text": "周末比较挤，但依然好玩。", "rating": "4", "name": "T. Anan", "date": "2026-03" },
-      { "text": "交通方便，就在金钟塔旁。", "rating": "5", "name": "P. Mod", "date": "2026-02" },
-      { "text": "纪念品很漂亮，尤其木雕。", "rating": "4", "name": "S. In", "date": "2026-02" },
-      { "text": "18:00 到正好，没那么热。", "rating": "5", "name": "V. K", "date": "2026-01" },
-      { "text": "吃的便宜，尝了好多样。", "rating": "4", "name": "N. Cha", "date": "2026-01" }
-    ],
+    "items": [],
     "viewLocation": "在 Google 地图上查看位置",
     "viewAll": "在谷歌地图查看全部评价"
   },
@@ -209,7 +204,7 @@
     "lead": "夜市位于清莱市中心，乘公共交通或步行都方便。",
     "stats": [
       { "tag": "区域", "value": "市中心", "sub": "帕洪耀庭路" },
-      { "tag": "营业", "value": "18:00–23:00", "sub": "每日" },
+      { "tag": "营业", "value": "18:30–23:00", "sub": "每日" },
       { "tag": "门票", "value": "免费", "sub": "无需购票" }
     ],
     "address": "WR4M+5M2，威安县，清莱直辖县，清莱府 57000，泰国",
@@ -262,7 +257,7 @@
     "rows": [
       {
         "name": "清莱夜市（本站主题）",
-        "days": "每日 18:00 – 23:00",
+        "days": "每日 18:30 – 23:00",
         "location": "帕洪耀庭路，老客运站（Bus Terminal 1）旁",
         "features": "固定摊位与美食广场、两大舞台免费演出，雨天多数摊位有遮挡照常营业",
         "highlight": true
@@ -513,8 +508,8 @@
     "mapsLabel": "Google 地图 →",
     "sourcesTitle": "参考来源",
     "sourcesNote": "内容整理自以下来源，以保证资料的可信度。",
-    "reviewsSyncLabel": "评价 · 同步时间 2026 年 9 月",
-    "reviewsSyncNote": "评分与评价同步自 Google 地图用户评价，同步时间 2026 年 9 月；版权归原作者与 Google 地图所有。",
+    "reviewsSyncLabel": "评价 · 同步时间 2026 年 10 月",
+    "reviewsSyncNote": "评分与评价同步自 Google 地图用户评价，同步时间 2026 年 10 月；版权归原作者与 Google 地图所有。",
     "reviewsSyncLink": "在谷歌地图查看全部评价",
     "imageCopyright": "本网站所展示的所有图片产权及版权均归原摄影者所有。",
     "privacy": "隐私政策",

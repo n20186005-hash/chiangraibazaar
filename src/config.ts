@@ -17,11 +17,11 @@ export const siteConfig = {
     }
   },
   rating: '4.2',
-  reviewCount: '15,332',
+  reviewCount: '15,392',
   reviewsSyncDate: {
-    th: 'กันยายน 2026',
-    en: 'September 2026',
-    zh: '2026 年 9 月'
+    th: 'ตุลาคม 2026',
+    en: 'October 2026',
+    zh: '2026 年 10 月'
   },
   govtTourismUrl: 'https://www.tourismthailand.org',
   category: {
@@ -38,9 +38,9 @@ export const siteConfig = {
   phoneDisplay: '—',
   plusCode: 'WR4M+5M2 · Chiang Rai',
   hours: {
-    th: 'ทุกวัน ๑๘:๐๐ – ๒๓:๐๐ น.',
-    en: 'Daily 18:00 – 23:00',
-    zh: '每日 18:00 – 23:00'
+    th: 'ทุกวัน ๑๘:๓๐ – ๒๓:๐๐ น.',
+    en: 'Daily 18:30 – 23:00',
+    zh: '每日 18:30 – 23:00'
   },
   sameAs: [
     'https://maps.app.goo.gl/D5xsGmoe68TraUBd6'

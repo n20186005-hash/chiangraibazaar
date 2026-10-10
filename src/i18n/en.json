@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Chiang Rai Night Bazaar: Opening Hours, Food, Shows & Map (2026)",
-    "description": "Plan your visit to Chiang Rai Night Bazaar (เชียงรายไนท์บาร์ซาร์), the nightly night market next to Bus Terminal 1. Open daily 6 PM–11 PM with Northern Thai food courts, free Lanna cultural shows & handicrafts."
+    "title": "Chiang Rai Night Bazaar (2026): Hours, Food & Directions",
+    "description": "Explore Chiang Rai Night Bazaar in 2026. Check opening hours, street food, free cultural shows, shopping tips and directions near Bus Terminal 1."
   },
   "header": {
     "home": "Home",
@@ -25,14 +25,14 @@
     "subtitle": "Chiang Rai's largest and most famous night market, along Phahon Yothin Road near the Golden Clock Tower and the Old City gate — handicrafts, souvenirs, Northern Thai food and nightly culture.",
     "cta1": "Plan your visit",
     "cta2": "See the food",
-    "openNow": "🟢 Opens tonight at 18:00",
+    "openNow": "🟢 Opens tonight at 18:30",
     "closedNow": "🔴 Closed right now",
     "checking": "Checking opening status…",
     "rating": "4.2",
-    "reviewCount": "15,332 Google reviews",
+    "reviewCount": "15,392 Google reviews",
     "imgAlt": "Chiang Rai Night Bazaar - Main view of the night market in Chiang Rai, Thailand",
     "viewLocation": "View location on Google Maps",
-    "hoursShort": "Daily 6–11 PM",
+    "hoursShort": "Daily 6:30–11 PM",
     "freeEntry": "Free entry",
     "locationShort": "Next to Bus Terminal 1",
     "mapsCta": "Open in Maps",
@@ -43,7 +43,7 @@
     "goldenHourLabel": "Opening hours",
     "crowdWarningLabel": "Peak time",
     "crowdAfter": "20:00 – 22:00",
-    "lightCaption": "Open nightly 18:00 – 23:00",
+    "lightCaption": "Open nightly 18:30 – 23:00",
     "weatherError": "Live weather is unavailable right now"
   },
   "about": {
@@ -56,8 +56,8 @@
     "quoteAuthor": "A regular night-market visitor",
     "stats": [
       { "value": "4.2", "label": "Google rating" },
-      { "value": "15,332", "label": "reviews" },
-      { "value": "18:00–23:00", "label": "nightly" }
+      { "value": "15,392", "label": "reviews" },
+      { "value": "18:30–23:00", "label": "nightly" }
     ],
     "breadcrumb": ["Chiang Rai Night Bazaar", "Chiang Rai", "Chiang Rai Province", "Thailand"],
     "highlights": [
@@ -77,13 +77,13 @@
     "intro": "The market grew alongside Chiang Rai's rise as a tourist base in the 1990s, when travellers began using the city as a stopover for the Golden Triangle — yet the area's historical and Lanna cultural roots run far deeper.",
     "blocks": [
       { "title": "Lanna heritage", "text": "Chiang Rai was once the capital of the Lanna Kingdom and a long-standing caravan crossroads, so handicrafts, textiles, silver and hill-tribe goods have accumulated here for generations — the very soul of this night market." },
-      { "title": "The Golden Clock Tower", "text": "At the market's heart stands the Golden Art Clock Tower (Chiang Rai Clock Tower), designed and built in 2008 by Chalermchai Kositpipat — the artist behind Chiang Rai's famous White Temple (Wat Rong Khun). Its golden crown glows as the city's favourite meeting point and a symbol of modern Chiang Rai. It is often wrongly attributed to Thawan Duchanee, creator of the Black House Museum (Baandam Museum) — that artist is unrelated to this clock tower." },
+      { "title": "The Golden Clock Tower", "text": "A short walk from the market stands the Golden Art Clock Tower (Chiang Rai Clock Tower), designed and built in 2008 by Chalermchai Kositpipat — the artist behind Chiang Rai's famous White Temple (Wat Rong Khun). Its golden crown glows as the city's favourite meeting point and a symbol of modern Chiang Rai. It is often wrongly attributed to Thawan Duchanee, creator of the Black House Museum (Baandam Museum) — that artist is unrelated to this clock tower." },
       { "title": "A night-time cultural hub", "text": "Today the market blends commerce, food and performance, expressing a modern Chiang Rai identity that still keeps its Lanna cultural roots." },
       { "title": "Nearby historical landmarks", "text": "A short walk away is Wat Phra Kaew, the original home of the Emerald Buddha — Thailand's most revered image — alongside the King Mengrai Monument and the Mae Kok River, all anchoring the area's deep history." }
     ],
     "legend": {
       "title": "Local legend",
-      "text": "The striking Golden Clock Tower at the heart of the market was designed in 2008 by Chalermchai Kositpipat, the artist behind Chiang Rai's White Temple. Locals say its golden crown honours the glory of old Lanna, and it has become the meeting point everyone trusts."
+      "text": "The striking Golden Clock Tower, a short walk from the market, was designed in 2008 by Chalermchai Kositpipat, the artist behind Chiang Rai's White Temple. Locals say its golden crown honours the glory of old Lanna, and it has become the meeting point everyone trusts."
     },
     "didYouKnow": {
       "title": "Did you know?",
@@ -105,9 +105,10 @@
     "hours": {
       "tag": "🕒",
       "title": "Opening hours",
-      "time": "18:00 – 23:00 (nightly)",
+      "time": "18:30 – 23:00 (nightly)",
+      "verified": "Open daily 18:30–23:00, per Chiang Rai city tourism info · verified October 2026",
       "items": [
-        { "label": "Stalls open", "value": "18:00" },
+        { "label": "Stalls open", "value": "18:30" },
         { "label": "Busiest", "value": "20:00 – 22:00" },
         { "label": "Closes", "value": "23:00" }
       ]
@@ -184,25 +185,16 @@
     "label": "From visitors",
     "heading": "Chiang Rai Night Bazaar reviews",
     "intro": "A summary of what real visitors say on Google Reviews.",
-    "disclaimer": "Overall 4.2 from 15,332 reviews (Google)",
+    "disclaimer": "Overall 4.2 from 15,392 reviews (Google)",
     "declaration": "Reviews shown are summarised for illustration, not verbatim posts.",
-    "syncNote": "Rating and review count synced from Google Maps user reviews · September 2026 · ",
+    "syncNote": "Rating and review count synced from Google Maps user reviews · October 2026 · ",
     "syncNoteLink": "View all reviews on Google Maps↗",
-    "sourceStatement": "Synced from Google Maps user reviews, September 2026; copyright belongs to the original authors and Google Maps",
+    "sourceStatement": "Synced from Google Maps user reviews, October 2026; copyright belongs to the original authors and Google Maps",
     "featured": [
       { "text": "Such a fun market to walk around — souvenirs and food, perfect after dinner.", "source": "— International visitor" },
       { "text": "The khao soi here is delicious and cheap, and the vendors are friendly.", "source": "— Domestic visitor" }
     ],
-    "items": [
-      { "text": "Lovely atmosphere, could walk for hours, so many souvenirs.", "rating": "5", "name": "A. Suwan", "date": "2026-05" },
-      { "text": "Great variety of food; the sai ua and khao soi were my favourites.", "rating": "5", "name": "K. Phrom", "date": "2026-04" },
-      { "text": "Bargain hard — some stalls quote high at first.", "rating": "4", "name": "M. Lee", "date": "2026-03" },
-      { "text": "Quite crowded on Sat–Sun but still enjoyable.", "rating": "4", "name": "T. Anan", "date": "2026-03" },
-      { "text": "Easy to reach, right by the Golden Clock Tower.", "rating": "5", "name": "P. Mod", "date": "2026-02" },
-      { "text": "Beautiful keepsakes, especially the woodcarvings.", "rating": "4", "name": "S. In", "date": "2026-02" },
-      { "text": "Arriving at 18:00 was just right, not too hot.", "rating": "5", "name": "V. K", "date": "2026-01" },
-      { "text": "Affordable food, tried many things.", "rating": "4", "name": "N. Cha", "date": "2026-01" }
-    ],
+    "items": [],
     "viewLocation": "View location on Google Maps",
     "viewAll": "View all reviews on Google Maps"
   },
@@ -212,7 +204,7 @@
     "lead": "The market sits in central Chiang Rai and is easy to reach by public transport or on foot.",
     "stats": [
       { "tag": "Area", "value": "City centre", "sub": "Phahon Yothin Rd" },
-      { "tag": "Open", "value": "18:00–23:00", "sub": "nightly" },
+      { "tag": "Open", "value": "18:30–23:00", "sub": "nightly" },
       { "tag": "Entry", "value": "Free", "sub": "no ticket" }
     ],
     "address": "WR4M+5M2, Tambon Wiang, Mueang Chiang Rai District, Chiang Rai 57000",
@@ -265,7 +257,7 @@
     "rows": [
       {
         "name": "Chiang Rai Night Bazaar (this guide)",
-        "days": "Daily 18:00 – 23:00",
+        "days": "Daily 18:30 – 23:00",
         "location": "Phahon Yothin Rd, next to Bus Terminal 1",
         "features": "Permanent stalls & food courts, free shows on two stages, mostly under cover in rain",
         "highlight": true
@@ -516,8 +508,8 @@
     "mapsLabel": "Google Maps →",
     "sourcesTitle": "Reference sources",
     "sourcesNote": "Information is compiled from the following sources to support content credibility.",
-    "reviewsSyncLabel": "Reviews · Synced September 2026",
-    "reviewsSyncNote": "Ratings and reviews are synced from Google Maps user reviews as of September 2026; copyright belongs to the original authors and Google Maps.",
+    "reviewsSyncLabel": "Reviews · Synced October 2026",
+    "reviewsSyncNote": "Ratings and reviews are synced from Google Maps user reviews as of October 2026; copyright belongs to the original authors and Google Maps.",
     "reviewsSyncLink": "View all reviews on Google Maps",
     "imageCopyright": "All images shown on this website are the property and copyright of their original photographers.",
     "privacy": "Privacy Policy",
