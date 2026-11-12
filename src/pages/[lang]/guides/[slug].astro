@@ -4,12 +4,14 @@ import Footer from '../../../components/Footer.astro';
 import { guides } from '../../../data/guides';
 import { siteConfig } from '../../../config';
 import { attractionDetails } from '../../../data/attractionDetails';
+import { topicDetails } from '../../../data/topicDetails';
 import { getI18n, htmlLang, languagesList } from '../../../i18n/ui';
 export const prerender = true;
 export function getStaticPaths() { return languagesList.flatMap(lang=>guides.map(g=>({params:{lang,slug:g.slug}}))); }
 const {lang, messages} = await getI18n(Astro.url);
 const guide = guides.find(g=>g.slug===Astro.params.slug)!;
 const detail = attractionDetails[guide.slug];
+const topic = topicDetails[guide.slug]?.[lang];
 const [title,intro,highlight,tip] = guide.copy[lang];
 const labels = {
  en:{home:'Home',all:'All guides',about:'About this place or topic',facts:'Visitor essentials',hours:'Hours',cost:'Admission',location:'Location and directions',route:'Suggested visit route',steps:['Before you go','On arrival','Make the most of your stop'],tips:'Things to know',photo:'Photography and observation',stay:'Where to stay',faq:'Frequently asked questions',q1:'When should I visit?',q2:'How do I get there?',answer:'Check the current opening arrangements and weather before travelling. Daytime is usually more appropriate for temples and museums; the bazaar itself is an evening market.',near:'Continue exploring',maps:'Open this place on Google Maps',sources:'Information and updates',sourceText:'Practical guidance is based on the attraction context and publicly available tourism information. Operating arrangements, transport and prices may change; verify at the venue.'},
@@ -21,7 +23,7 @@ const isNightMarket = !guide.place;
 const related = guides.filter(g=>g.slug!==guide.slug && (g.category===guide.category || g.category==='nearby')).slice(0,5);
 const managementTitle = {en:'About the attraction and its stewardship',zh:'关于景点与管理主体',th:'เกี่ยวกับสถานที่และหน่วยงานดูแล'}[lang];
 const managementMarket = {en:'Chiang Rai Night Bazaar consists of individual merchants and food vendors in a central-city market area. Stall services are operated by their respective businesses; for current public-space arrangements and event details, consult the local municipal tourism office.',zh:'清莱夜市由市中心的独立商贩与餐饮摊位组成，各摊位自行经营。公共空间安排及活动信息，可向清莱当地市政旅游部门查询。',th:'เชียงรายไนท์บาซาร์ประกอบด้วยผู้ค้าและร้านอาหารหลายรายที่ดำเนินกิจการของตนเอง สำหรับข้อมูลพื้นที่สาธารณะและกิจกรรมล่าสุดควรติดต่อหน่วยงานท่องเที่ยวของเทศบาล'}[lang];
-const photoAllowed = ['clock-tower','wat-jed-yod','wat-phra-kaew','wat-phra-singh','blue-temple','white-temple','baandam-museum','singha-park'];
+const photoAllowed = ['clock-tower','wat-jed-yod','wat-phra-kaew','wat-phra-singh','blue-temple','white-temple','baandam-museum','singha-park','saturday-walking-street','sunday-happy-street'];
 const photoSrc = detail && photoAllowed.includes(guide.slug) ? detail.photo : undefined;
 const moreLabel = {en:['Historical and cultural context','Architecture and what to notice','Suggested observation and photography','Getting there','Start from the city centre and use the destination-specific map pin; allow extra time for traffic and a separate return journey.'],zh:['历史与文化背景','建筑特色与观察重点','摄影机位与游览建议','交通方式','从清莱市中心出发，使用本景点专属地图定位；考虑路况并预留返程时间。'],th:['ประวัติและวัฒนธรรม','สถาปัตยกรรมและจุดสังเกต','การชมและถ่ายภาพ','การเดินทาง','เริ่มจากใจกลางเชียงราย ใช้หมุดแผนที่เฉพาะสถานที่ และเผื่อเวลาเดินทางกลับ']}[lang];
 ---
@@ -32,6 +34,7 @@ const moreLabel = {en:['Historical and cultural context','Architecture and what 
     <div class="max-w-6xl mx-auto px-5 py-12 grid lg:grid-cols-[2fr_1fr] gap-12">
       <article class="space-y-11">
         <section><h2 class="font-display text-3xl mb-4">{labels.about}</h2><p>{intro}</p><p class="mt-4">{highlight}</p></section>
+        {topic && <section class="space-y-5"><h2 class="font-display text-3xl">{lang==='zh'?'深入体验与实用建议':lang==='th'?'ข้อมูลเชิงลึกและเคล็ดลับ':'In-depth visitor insight'}</h2>{topic.map(p=><p>{p}</p>)}</section>}
         <section class="rounded-xl bg-white border-l-4 border-gold p-7"><h2 class="font-display text-3xl mb-4">{managementTitle}</h2><p>{detail?.management[lang] ?? managementMarket}</p><p class="mt-4">{detail?.features[lang][0] ?? intro}</p></section>
         {detail && <section><h2 class="font-display text-3xl mb-5">{lang==='zh'?'发现景点魅力':lang==='th'?'เสน่ห์ของสถานที่':'Discover the attraction'}</h2><div class="space-y-7">{detail.features[lang].map((paragraph,i)=><div><h3 class="font-display text-xl text-burgundy mb-2">{moreLabel[i]}</h3><p>{paragraph}</p></div>)}</div></section>}
         <section class="rounded-xl bg-white border border-gold/30 p-7"><h2 class="font-display text-2xl mb-4">{labels.facts}</h2><dl class="grid sm:grid-cols-2 gap-5"><div><dt class="text-sm text-burgundy">{labels.location}</dt><dd class="mt-1">{guide.place ?? siteConfig.address[lang]}</dd></div><div><dt class="text-sm text-burgundy">{labels.hours}</dt><dd class="mt-1">{isNightMarket ? siteConfig.hours[lang] : labels.answer}</dd></div><div><dt class="text-sm text-burgundy">{labels.cost}</dt><dd class="mt-1">{isNightMarket ? (lang==='zh'?'免费入场，消费自理':lang==='th'?'เข้าฟรี จ่ายค่าสินค้าเอง':'Free entry; purchases extra') : (lang==='zh'?'请核实景点最新票务':lang==='th'?'ตรวจค่าเข้าชมล่าสุด':'Check current venue admission')}</dd></div><div><dt class="text-sm text-burgundy">Google Maps</dt><dd class="mt-1"><a class="underline text-burgundy" href={maps} target="_blank" rel="noopener">{labels.maps}</a></dd></div></dl></section>
