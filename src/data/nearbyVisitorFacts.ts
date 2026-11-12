@@ -3,6 +3,8 @@ import type { Locale } from './guides';
 type Localized = Record<Locale, string>;
 type VisitorFacts = {
   address: string;
+  mapUrl?: string;
+  mapEmbedQuery?: string;
   kind: Localized;
   hours: Localized;
   admission: Localized;
@@ -17,6 +19,8 @@ const tr = (en:string, zh:string, th:string):Localized => ({en,zh,th});
 export const nearbyVisitorFacts: Record<string,VisitorFacts> = {
   'clock-tower': {
     address:'Chiang Rai Clock Tower, Banphaprakan Road, Wiang, Mueang Chiang Rai, Chiang Rai 57000, Thailand',
+    mapUrl:'https://maps.app.goo.gl/Dfuz1FxLmbyM6f1o6',
+    mapEmbedQuery:'19.9071489,99.8309632',
     kind:tr('Public clock tower and civic landmark','市中心公共钟楼与城市地标','หอนาฬิกาและสัญลักษณ์เมือง'),
     hours:tr('Visible from surrounding public streets at any time; any light-show programme is separate.','周边公共道路可随时观赏；灯光表演以现场公告为准。','ชมได้จากถนนสาธารณะตลอดเวลา ส่วนรอบการแสดงไฟตรวจประกาศหน้างาน'),
     admission:tr('No ticket to view from public sidewalks.','从公共人行道观赏无需门票。','ชมจากทางเท้าสาธารณะไม่เสียค่าเข้า'),
@@ -89,6 +93,8 @@ export const nearbyVisitorFacts: Record<string,VisitorFacts> = {
   },
   'saturday-walking-street': {
     address:'Thanalai Road, Wiang, Mueang Chiang Rai, Chiang Rai 57000, Thailand',
+    mapUrl:'https://maps.app.goo.gl/JdieKvsAFybSvrJd6',
+    mapEmbedQuery:'19.908673,99.830550',
     kind:tr('Saturday evening pedestrian street market','周六晚间步行市集','ตลาดถนนคนเดินเย็นวันเสาร์'),
     hours:tr('Saturday evenings; timing and road closures can shift for weather or events.','主要在周六傍晚至夜间举办，封街与结束时间可能因天气活动调整。','เปิดช่วงเย็นถึงค่ำวันเสาร์ เวลาและการปิดถนนอาจเปลี่ยนตามอากาศหรืองาน'),
     admission:tr('No general market entry ticket; pay individual vendors for purchases.','市集通常无统一入场票，摊位购物单独支付。','โดยทั่วไปไม่มีบัตรเข้า ซื้อสินค้าจ่ายกับร้านค้า'),
@@ -97,7 +103,9 @@ export const nearbyVisitorFacts: Record<string,VisitorFacts> = {
     photo:tr('Capture a wide view of temporary stalls and lantern-lit street scenes while keeping the walking lane clear.','拍摄连续摊位与街道灯光，注意不要挡住人流。','ถ่ายมุมกว้างแนวร้านและแสงไฟ โดยไม่กีดขวางทางเดิน')
   },
   'sunday-happy-street': {
-    address:'Sankhongnoi Road, Rop Wiang, Mueang Chiang Rai, Chiang Rai 57000, Thailand',
+    address:'San Khong Noi Road Soi 1, Rop Wiang, Mueang Chiang Rai, Chiang Rai 57000, Thailand',
+    mapUrl:'https://www.google.com/maps/search/?api=1&query=19.901506%2C99.819035',
+    mapEmbedQuery:'19.901506,99.819035',
     kind:tr('Sunday neighbourhood walking-street market','周日社区步行街市集','ตลาดถนนคนม่วนวันอาทิตย์'),
     hours:tr('Sunday evenings, commonly around 16:00–23:00; check that the street market is operating.','通常周日约16:00–23:00举办，实际是否开市以当地公告为准。','โดยทั่วไปวันอาทิตย์ราว 16:00–23:00 ควรตรวจว่าจัดตลาดตามปกติ'),
     admission:tr('No general walking-street admission; food and shopping are paid separately.','通常无需统一入场费，餐饮购物自行付费。','โดยทั่วไปไม่เก็บค่าเข้าถนนคนเดิน ค่าอาหารและสินค้าแยกต่างหาก'),
