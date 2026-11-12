@@ -1,0 +1,8 @@
+---
+import { guides } from '../data/guides';
+import type { Lang } from '../i18n/ui';
+const {lang} = Astro.props as {lang:Lang};
+const nearby = guides.filter(g=>g.category==='nearby');
+const words = {en:['Nearby attractions and day trips','Explore the Clock Tower, temples, walking streets and art destinations from central Chiang Rai.'],zh:['周边游览与景点专页','从清莱市中心出发，探索钟楼、寺庙、周末步行街和艺术景点。'],th:['ที่เที่ยวใกล้เคียงและทริปในเชียงราย','เที่ยวหอนาฬิกา วัด ถนนคนเดิน และแหล่งศิลปะจากตัวเมืองเชียงราย']}[lang];
+---
+<section id="nearby-guides" class="py-16 bg-white border-y border-gold/30"><div class="max-w-7xl mx-auto px-5"><h2 class="font-display text-3xl md:text-4xl">{words[0]}</h2><p class="text-ink/70 my-4">{words[1]}</p><div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">{nearby.map(g=><a href={`/${lang}/guides/${g.slug}/`} class="p-5 bg-ivory rounded-lg border border-gold/30 hover:shadow-md"><h3 class="text-lg font-semibold">{g.copy[lang][0]}</h3><p class="mt-2 text-sm text-ink/70">{g.copy[lang][1]}</p></a>)}</div></div></section>

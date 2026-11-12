@@ -12,8 +12,9 @@ interface Props {
   description: string;
   /** Set true on auxiliary pages (legal/tool pages) to keep them out of search indexes. */
   noindex?: boolean;
+  guidePage?: boolean;
 }
-const { lang, title, description, noindex = false } = Astro.props;
+const { lang, title, description, noindex = false, guidePage = false } = Astro.props;
 
 // Canonical URL follows the site-wide convention:
 // language roots keep a trailing slash (/en/), deeper pages do not (/en/privacy-policy).
@@ -28,7 +29,15 @@ const heroImageAlt: string = messagesMap[lang].hero.imgAlt;
 
 const heroImage = `${siteConfig.domain}/gallery/chiang-rai-night-bazaar-1.jpg`;
 
-const jsonLd = [
+const jsonLd = guidePage ? [{
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description,
+  inLanguage: htmlLang[lang],
+  mainEntityOfPage: canonical,
+  publisher: { '@type': 'Organization', name: 'Chiang Rai Night Bazaar Guide' },
+}] : [
   {
     '@context': 'https://schema.org',
     '@type': ['TouristAttraction', 'NightMarket'],
@@ -116,9 +125,9 @@ const jsonLd = [
     <meta property="og:url" content={canonical} />
     <meta name="twitter:card" content="summary_large_image" />
     {languagesList.map((l) => (
-      <link rel="alternate" hreflang={htmlLang[l]} href={`${siteConfig.domain}/${l}/`} />
+      <link rel="alternate" hreflang={htmlLang[l]} href={`${siteConfig.domain}/${l}${rawPath.split('/').slice(2).length ? `/${rawPath.split('/').slice(2).join('/')}` : '/'}`} />
     ))}
-    <link rel="alternate" hreflang="x-default" href={`${siteConfig.domain}/en/`} />
+    <link rel="alternate" hreflang="x-default" href={`${siteConfig.domain}/en${rawPath.split('/').slice(2).length ? `/${rawPath.split('/').slice(2).join('/')}` : '/'}`} />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

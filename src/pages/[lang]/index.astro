@@ -21,6 +21,8 @@ import Reviews from '../../components/Reviews.astro';
 import FAQ from '../../components/FAQ.astro';
 import MapSection from '../../components/MapSection.astro';
 import Footer from '../../components/Footer.astro';
+import GuideDirectory from '../../components/GuideDirectory.astro';
+import NearbyDirectory from '../../components/NearbyDirectory.astro';
 
 // Server-rendered page (weather module fetches fresh data on the server).
 // Unknown language prefixes are redirected to the default locale.
@@ -52,6 +54,8 @@ const { lang, messages } = await getI18n(Astro.url);
     <Reviews messages={messages} />
     <FAQ messages={messages} />
     <MapSection lang={lang} messages={messages} />
+    <NearbyDirectory lang={lang} />
+    <GuideDirectory lang={lang} />
   </main>
   <Footer lang={lang} messages={messages} />
 </BaseLayout>

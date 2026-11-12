@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Footer from '../../../components/Footer.astro';
+import { guides } from '../../../data/guides';
+import { getI18n, htmlLang, languagesList } from '../../../i18n/ui';
+export function getStaticPaths() { return languagesList.map(lang => ({params:{lang}})); }
+export const prerender = true;
+const {lang, messages} = await getI18n(Astro.url);
+const words = {en:['Explore Chiang Rai','30 independent guides to food, markets, practical planning and nearby sights.','All guides','Home'],zh:['探索清莱','30篇独立攻略，覆盖美食、购物、交通规划与周边景点。','全部攻略','首页'],th:['สำรวจเชียงราย','คู่มือ 30 เรื่องเกี่ยวกับอาหาร ตลาด การวางแผน และสถานที่ใกล้เคียง','คู่มือทั้งหมด','หน้าแรก']}[lang];
+---
+<BaseLayout lang={lang} title={`${words[0]} | Chiang Rai Night Bazaar`} description={words[1]} guidePage>
+  <header class="bg-teakDeep text-ivory border-b border-gold/30"><div class="max-w-6xl mx-auto px-5 py-5 flex flex-wrap items-center justify-between gap-4"><a class="text-goldBright font-display text-xl" href={`/${lang}/`}>{messages.footer.brand.name}</a><nav class="flex gap-4 text-sm"><a href={`/${lang}/`}>{words[3]}</a>{languagesList.map(l=><a class={l===lang?'text-goldBright':''} hreflang={htmlLang[l]} href={`/${l}/guides/`}>{l.toUpperCase()}</a>)}</nav></div></header>
+  <main><section class="bg-teak text-ivory py-16"><div class="max-w-6xl mx-auto px-5"><p class="text-gold uppercase tracking-widest text-sm">Chiang Rai Night Bazaar</p><h1 class="font-display text-4xl md:text-5xl mt-3">{words[0]}</h1><p class="mt-5 max-w-2xl text-ivory/75">{words[1]}</p></div></section>
+  <section class="max-w-6xl mx-auto px-5 py-14"><h2 class="font-display text-3xl mb-7">{words[2]}</h2><div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">{guides.map(g=><a class="block bg-white rounded-xl border border-gold/30 p-6 shadow-sm hover:shadow-lg transition-shadow" href={`/${lang}/guides/${g.slug}/`}><span class="text-xs uppercase tracking-wider text-burgundy">{g.category}</span><h3 class="font-display text-xl mt-2">{g.copy[lang][0]}</h3><p class="text-sm mt-3 text-ink/75">{g.copy[lang][1]}</p><span class="text-burgundy text-sm font-semibold mt-4 inline-block">{lang==='zh'?'阅读攻略 →':lang==='th'?'อ่านคู่มือ →':'Read guide →'}</span></a>)}</div></section></main>
+  <Footer lang={lang} messages={messages}/>
+</BaseLayout>
